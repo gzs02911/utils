@@ -130,6 +130,7 @@ main() {
 	if [ -f "${wgetErrorLog}" ]; then 
 		echo "Registre de errors de descàrrega:"
 		cat ${wgetErrorLog}
+		rm -rf ${wgetErrorLog}
 	fi
 	echo ""
 	echo "========================================================="
